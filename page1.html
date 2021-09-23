@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>page1</title>
+</head>
+
+<style>
+    h1{
+        color:#fffac2;
+        font-size:3rem;
+        word-break:break-all;
+    }
+    .all{
+        display:flex;
+        flex-direction: row;
+        width: 100%;
+        height:100%;
+    }
+    #all1{
+        width:23%;
+        height:20rem;
+        background-color:#bbe4f5;
+        border-radius: 0 5rem 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:3rem;
+        animation: changebg ease-in-out .5s infinite;
+    }
+    @keyframes changebg {
+        from{
+            background-color:#bbe4f5 ;
+        }
+        to{
+            background-color: #fad4e6;
+        }
+    }
+    #all2{
+        margin-left:15rem;
+        margin-top:15rem;
+        width:50%;
+        height:30rem;
+        background-color: #fffac2;
+        border-radius: 3rem;
+        box-shadow: 2rem 0 2rem 0 #bbe4f5;
+        transition: box-shadow 0.5s ease-out;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #all2:hover{
+        box-shadow: 2rem 0 2rem 0 #bbe4f5 ;
+    }
+    h3{
+        font-size: 3rem;
+        color:#9fdaee;
+        text-align: center;
+    }
+
+</style>
+
+<body style="background-color: #feeaf3;">
+    <div class="all">
+        <div class="all" id="all1">
+            <h1>PROJECT 1</h1>
+        </div>
+        <div class="all" id="all2">
+            <h3>Something hihi</h3>
+        </div>
+        
+    </div>
+</body>
+
+<script>
+    
+</script>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myproject</title>
+</head>
+
+<style>
+    h1{
+        color:#ffd6ff;
+        text-align: center;
+    }
+    #header{
+        background-color:#b8c0ff;
+        width:50%;
+        height:fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2rem;
+        margin-top:4rem;
+        border-style:dotted;
+        border-color: white;
+    }
+    .all1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .all2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition-duration:1000ms;
+        transition-property: all;
+    }
+    #pro1:hover,#pro2:hover,#pro3:hover{
+        transform: rotate(15deg);
+    }
+    #pro1,#pro2,#pro3{
+        width:20rem;
+        height:20rem;
+        border-radius: 1rem;
+        background-color: #b2d6ff;
+        margin-top:8rem;
+        margin-left:2rem;
+        border-style:dotted;
+        border-color: white;
+        cursor: pointer;
+    }
+    h2{
+        color: white;
+        font-size: 3rem;
+    }
+</style>
+
+<body style="background-color: #cdb4db;">
+    <div class="all1">
+        <div class="all1" id="header">
+            <h1>MY PROJECT</h1>
+        </div>
+    </div>
+    <div class="all2">
+        <div class="all2" id="pro1">
+            <h2>?</h2>
+        </div>
+        <div class="all2" id="pro2">
+            <h2>?</h2>
+        </div>
+        <div class="all2" id="pro3">
+            <h2>?</h2>
+        </div>
+    </div>
+</body>
+
+<script>
+        const pro1=document.querySelector('#pro1');
+        pro1.onclick=()=>{
+            window.open("pro1.html");
+        }
+        const pro2=document.querySelector('#pro2');
+        pro2.onclick=()=>{
+            window.open("pro2.html");
+        }
+        const pro3=document.querySelector('#pro3');
+        pro3.onclick=()=>{
+            window.open("pro3.html");
+        }
+</script>
+</html>

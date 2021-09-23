@@ -1,0 +1,268 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title NhatQuynh
+  style.
+    h1{
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h3{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color:whitesmoke;
+    }
+    .header{
+    background: linear-gradient(0deg, rgba(113,131,85,1) 35%, rgba(181,201,154,1) 77%);
+    width:100%;
+    height:40px;
+    text-align: center;
+    word-spacing: 3px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    color:whitesmoke;
+    border-radius: 1rem 1rem 0 0;
+    }
+    .all{
+    background-color:#e9f5db;
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .intro{
+    word-break:keep-all;
+    font-size: 19px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color:#3b412b;
+    width:90%;
+    height:fit-content;
+    background-image: url(/img/back.jpg);
+    border-style: double;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    text-align: center;
+    border-radius:0 1rem 0 1rem;
+    padding:1rem;
+    }
+    .ava{
+    border: 10px outset #87986a;
+    margin-top:50px;
+    height:20rem;
+    width:20rem;
+    border-radius: 25%;
+    margin-bottom:45px;
+    }
+    .fb, .ins, .call, .email, .project{
+    width:80%;
+    }
+    .container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    }
+    #em, #co{
+    margin-top: 0.5rem;
+    }
+    .fb{
+    background-color: #b5c99a;
+    border-radius: 2rem;
+    height: 5rem;
+    margin-top:2rem;
+    cursor:pointer;
+    }
+    .fbimg{
+    border-radius: 6px;
+    height:3rem;
+    width:3.1rem;
+    margin-right:3rem;
+    }
+    .ins{
+    background-color: #b5c99a;
+    border-radius: 2rem;
+    height: 5rem;
+    margin-top:2rem;
+    cursor:pointer;
+    }
+    .insimg{
+    border-radius: 3px;
+    height:3.5rem;
+    width: 3.5rem;
+    margin-left:0.3rem;
+    margin-right:2.9rem;
+    }
+    .email{
+    background-color: #b5c99a;
+    border-radius: 2rem;
+    height: 5rem;
+    margin-top:2rem;
+    cursor:pointer;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color:whitesmoke;
+    }
+    .emailimg{
+    border-radius: 3px;
+    height:3.5rem;
+    width: 3.5rem;
+    margin-right:3rem;
+    display:block;
+    }
+    .emailing{
+    font-size: 20px;
+    margin-top:1rem;
+    text-align: center;
+    }
+    .call{
+    background-color: #b5c99a;
+    border-radius: 2rem;
+    height: 5rem;
+    margin-top:2rem;
+    cursor:pointer;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    color:whitesmoke;
+    }
+    .callimg{
+    border-radius: 3px;
+    height:3.5rem;
+    width: 3.5rem;
+    margin-right:3rem;
+    display:block;
+    }
+    .project{
+    background-color: #b5c99a;
+    border-radius: 2rem;
+    height: 5rem;
+    margin-top:2rem;
+    cursor:pointer;
+    }
+    .projectimg{
+    border-radius: 3px;
+    height:3.5rem;
+    width: 3.5rem;
+    margin-right:2.5rem;
+    }
+    .quote{
+    height: 5rem;
+    width:100%;
+    }
+    .quoteimg{
+    height: auto;
+    width:100%;
+    }
+.header
+  h1 Nhat Quynh is back!
+.all
+  img.ava(src='/img/hình.jpg')
+  .intro
+    | &quot; Hi! I&apos;m Nhat Quynh.
+    | My major is Information Technology.
+    | I&apos;m a sophomore at University of Science.
+    | Hope you guy will see my potential &quot;
+  .fb(style='background-color: rgb(181, 201, 154); color: whitesmoke;')
+    .container
+      img.fbimg(src='/img/fb.png')
+      h3#textfb Facebook
+  .ins(style='background-color: rgb(181, 201, 154); color: whitesmoke;')
+    .container
+      img.insimg(src='/img/ins.png')
+      h3#textins Instagram
+  .call
+    #co.container
+      img.callimg(src='/img/call.png')
+      #phone(style='padding-right: 1.5rem;') Contact
+      .tele(style='display:none;') 037 411 1908
+  .email
+    #em.container
+      img#e.emailimg(src='/img/email.png')
+      #mail(style='padding-right: 3rem;') Email
+      .emailing(style='display:none') nhatquynh246357@gmail.com
+  .project(style='background-color: rgb(181, 201, 154); color: whitesmoke;')
+    .container
+      img.projectimg(src='/img/project.png')
+      h3#textpro My Project
+  .quote
+    img.quoteimg(style='margin-top:2rem' src='/img/left.jpg')
+    img.quoteimg(src='/img/quote.jpg')
+    img.quoteimg(src='/img/back1.jpg')
+script.
+  const fb=document.querySelector('.fb');
+  fb.onclick=()=>{
+  window.open("https://www.facebook.com/nhat.quynh.927543/");
+  }
+  fb.onmouseover=()=>{
+  fb.style.backgroundColor="white";
+  textfb.style.color="#b5c99a";
+  }
+  fb.onmouseleave=()=>{
+  fb.style.backgroundColor="#b5c99a";
+  textfb.style.color="whitesmoke";
+  }
+  const ins=document.querySelector('.ins');
+  ins.onclick=()=>{
+  window.open("https://www.instagram.com/quynhchomchom/");
+  }
+  ins.onmouseover=()=>{
+  ins.style.backgroundColor="white";
+  textins.style.color="#b5c99a";
+  }
+  ins.onmouseleave=()=>{
+  ins.style.backgroundColor="#b5c99a";
+  textins.style.color="whitesmoke";
+  }
+  const call=document.querySelector('.call');
+  const tele=document.querySelector('.tele');
+  call.onmouseover=()=>{
+  call.style.backgroundColor="white";
+  call.style.color="#b5c99a";
+  tele.style.display="unset";
+  phone.style.display="none";
+  }
+  call.onmouseleave=()=>{
+  call.style.backgroundColor="#b5c99a";
+  call.style.color="whitesmoke";
+  tele.style.display="none";
+  phone.style.display="unset";
+  }
+  const email=document.querySelector('.email');
+  const emailing=document.querySelector('.emailing');
+  const emailimg=document.querySelector('.emailimg');
+  email.onmouseover=()=>{
+  email.style.backgroundColor="white";
+  email.style.color="#b5c99a";
+  emailing.style.display="unset";
+  e.style.marginRight="1.2rem";
+  mail.style.display="none";
+  emailimg.style.display="none";
+  }
+  email.onmouseleave=()=>{
+  email.style.backgroundColor="#b5c99a";
+  email.style.color="whitesmoke";
+  emailing.style.display="none";
+  e.style.marginRight="3rem";
+  mail.style.display="unset";
+  emailimg.style.display="block";
+  }
+  const project=document.querySelector('.project');
+  project.onclick=()=>{
+      window.open("myproject","_self");
+  }
+  project.onmouseover=()=>{
+  project.style.backgroundColor="white";
+  textpro.style.color="#b5c99a";
+  }
+  project.onmouseleave=()=>{
+  project.style.backgroundColor="#b5c99a";
+  textpro.style.color="whitesmoke";
+  }
